@@ -21,6 +21,7 @@
         width: 100%;
         height: 360px;
         object-fit: cover;
+        margin-bottom: 16px;
       }
 
       h2{
@@ -39,9 +40,11 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class=".img-fluid" id="banner" src="https://flask-tutorial-1.animaygupta1.repl.co/static/logo.jpg" >
     <div class="container"> 
     <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
-    <img class=".img-fluid" id="banner" src="https://flask-tutorial-1.animaygupta1.repl.co/static/logo.jpg" >
+    
     <h2 class="text-center mt-3 mb-4">About Jovian</h2>
     <p class="lead">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus viverra adipiscing at in tellus. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Risus nullam eget felis eget nunc. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Integer enim neque volutpat ac tincidunt vitae. Massa sed elementum tempus egestas sed sed risus pretium quam. Ut aliquam purus sit amet luctus. Consequat interdum varius sit amet mattis vulputate enim nulla. Tristique nulla aliquet enim tortor at. Lobortis elementum nibh tellus molestie nunc non blandit. Ipsum nunc aliquet bibendum enim. Arcu ac tortor dignissim convallis. Tempor orci dapibus ultrices in iaculis nunc.
@@ -59,5 +62,6 @@
 <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
