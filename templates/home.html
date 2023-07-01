@@ -46,10 +46,12 @@
     <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
     
     <h2 class="text-center mt-3 mb-4">About Jovian</h2>
-    <p class="lead">
+      <div class="row" style="margin-bottom:16px">
+    <p class="lead col-md-6">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus viverra adipiscing at in tellus. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Risus nullam eget felis eget nunc. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Integer enim neque volutpat ac tincidunt vitae. Massa sed elementum tempus egestas sed sed risus pretium quam. Ut aliquam purus sit amet luctus. Consequat interdum varius sit amet mattis vulputate enim nulla. Tristique nulla aliquet enim tortor at. Lobortis elementum nibh tellus molestie nunc non blandit. Ipsum nunc aliquet bibendum enim. Arcu ac tortor dignissim convallis. Tempor orci dapibus ultrices in iaculis nunc.
     </p>
-
+        <img class="d-none d-md-block col-md-6" style="height:320px;" src="/static/people.jpg">
+      </div>
     <h2 class="text-center mt-3 mb-4">Open Positions</h2>
       <div>
         {% for job in jobs %}
@@ -59,7 +61,7 @@
         {% endfor %}
       </div>
       <div class="text-center">
-<button class="btn btn-primary btn-lg">Contact Us</button>
+<a href="mailto:hello@jovian.com?subject=Questions%20About%20Job%20Openings&body=My%20Name%3A%20%3CYour%20name%20here%3E%0D%0A%0D%0AMy%20Questions%3A%20%3CYour%20questions%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
       </div>
     </div>
     {% include 'footer.html' %}
