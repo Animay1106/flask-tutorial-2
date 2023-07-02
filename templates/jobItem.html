@@ -4,7 +4,7 @@
             <h4 style="color:rgb(120,120,120); margin-bottom:4px;">{{job['title']}}</h4>
             <div><b>Location: </b>{{job['location']}}</div>
             {% if 'SALARY' in job%}
-            <div><b>Salary: </b>{{job['SALARY']}}</div>
+            <div><b>Salary: </b>{{job['currency']}} {{job['SALARY']}}</div>
             {% endif %}
   </div>
   <div class="col-3 text-end">
