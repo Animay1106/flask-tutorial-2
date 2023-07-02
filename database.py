@@ -22,3 +22,12 @@ def load_jobs_from_db():
   for row in result.all():
     result_dicts.append(row._asdict())
   return result_dicts
+
+def load_job_from_db(id):
+  with engine.connect() as conn:
+    result = conn.execute(text('select * from jobs where id = :val'), parameters=dict(val=id))
+    rows = result.all()
+    if len(rows) == 0:
+      return None
+    else:
+      return rows[0]._asdict()
